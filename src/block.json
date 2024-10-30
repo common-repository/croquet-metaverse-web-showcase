@@ -1,0 +1,54 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "croquet/webshowcase-block",
+    "version": "1.1.11",
+    "title": "Croquet Metaverse Web Showcase",
+    "category": "embed",
+    "icon": "admin-site",
+    "description": "A 3D multiplayer space on WordPress pages",
+    "attributes": {
+        "cardsString": {
+            "type": "string",
+            "selector": "div",
+            "default": "[{\"place\":1,\"type\":\"image\",\"path\":\"https://croquet.io/webshowcase/site/CompanyLogo.jpg\"},{\"place\":2,\"type\":\"pdf\",\"path\":\"https://croquet.io/webshowcase/site/CompanyDeck.pdf\"}]"
+        },
+        "minHeight": {
+            "type": "string",
+            "selector": "div",
+            "default": "800px"
+        },
+        "apiKey": {
+            "type": "string",
+            "selector": "div",
+            "default": ""
+        },
+        "showcaseName": {
+            "type": "string",
+            "selector": "div",
+            "default": "(empty)"
+        },
+        "voiceChat": {
+            "type": "boolean",
+            "selector": "div",
+            "default": true
+        },
+        "showcasePrivacy": {
+            "type": "string",
+            "selector": "div",
+            "default": "invite"
+        },
+         "uniqueSessionPerVisit": {
+            "type": "boolean",
+            "selector": "div",
+            "default": true
+        }
+    },
+    "supports": {
+        "html": false
+    },
+    "textdomain": "croquet-metaverse-web-showcase",
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./index.css",
+    "style": "file:./style-index.css"
+}
